@@ -1,0 +1,32 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.1.gz" 
+# Started at Sat Jul  8 13:38:19 +04 2023
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.1074~1-71f3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+10F01 առաջին 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 10F01 is -9.86749 over 62 frames.
+10F02 երկու 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 10F02 is -9.77015 over 29 frames.
+10F03 համար 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 10F03 is -8.07094 over 98 frames.
+10F04 ժամանակ 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 10F04 is -10.395 over 58 frames.
+10F05 ժամանակ 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 10F05 is -10.2058 over 86 frames.
+11M01 առաջին 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 11M01 is -9.86281 over 28 frames.
+11M02 երկու 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 11M02 is -10.1166 over 37 frames.
+11M03 համար 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 11M03 is -8.3124 over 124 frames.
+11M04 հիմնական 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 11M04 is -9.43484 over 66 frames.
+11M05 ժամանակ 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 11M05 is -10.4498 over 61 frames.
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:176) Time taken 0.019825s: real-time factor assuming 100 frames/sec is 0.0030547
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:179) Done 10 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.41144 over 649 frames.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jul  8 13:38:19 +04 2023, elapsed time 0 seconds

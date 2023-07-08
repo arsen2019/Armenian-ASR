@@ -1,0 +1,61 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/4.mdl - |" "ark:gunzip -c exp/mono/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.1.gz" 
+# Started at Sat Jul  8 13:38:10 +04 2023
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/4.mdl - |' 'ark:gunzip -c exp/mono/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.1.gz' 
+gmm-boost-silence --boost=1.0 1 exp/mono/4.mdl - 
+WARNING (gmm-boost-silence[5.5.1074~1-71f3]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.5.1074~1-71f3]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.5.1074~1-71f3]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 01M01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 01M02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 01M03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 01M04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 01M05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 02F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 02F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 02F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 02F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 02F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 03M01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 03M02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 03M03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 03M04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 03M05
+LOG (apply-cmvn[5.5.1074~1-71f3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 45 utterances, errors on 0
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 04M01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 04M02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 04M03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 04M04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 04M05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 05F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 05F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 05F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 05F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 05F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 06F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 06F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 06F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 06F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 06F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 07F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 07F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 07F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 07F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 07F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 08F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 08F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 08F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 08F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 08F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 09F01
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 09F02
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 09F03
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 09F04
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:127) 09F05
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -108.972 over 2445 frames.
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:137) Retried 0 out of 45 utterances.
+LOG (gmm-align-compiled[5.5.1074~1-71f3]:main():gmm-align-compiled.cc:139) Done 45, errors on 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jul  8 13:38:10 +04 2023, elapsed time 0 seconds

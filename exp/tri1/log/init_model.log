@@ -1,0 +1,24 @@
+# gmm-init-model --write-occs=exp/tri1/1.occs exp/tri1/tree exp/tri1/treeacc data/lang/topo exp/tri1/1.mdl 
+# Started at Sat Jul  8 13:38:15 +04 2023
+#
+gmm-init-model --write-occs=exp/tri1/1.occs exp/tri1/tree exp/tri1/treeacc data/lang/topo exp/tri1/1.mdl 
+LOG (gmm-init-model[5.5.1074~1-71f3]:main():gmm-init-model.cc:271) Number of separate statistics is 100
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 6 7 8 9 10 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 3: 90; corresponding phone list: 15 16 17 18 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 5: 54; corresponding phone list: 23 24 25 26 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 6: 92; corresponding phone list: 27 28 29 30 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 7: 75; corresponding phone list: 31 32 33 34 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 8: 73; corresponding phone list: 35 36 37 38 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 9: 54; corresponding phone list: 39 40 41 42 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 10: 72; corresponding phone list: 43 44 45 46 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 12: 87; corresponding phone list: 51 52 53 54 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 14: 77; corresponding phone list: 59 60 61 62 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 15: 58; corresponding phone list: 63 64 65 66 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 17: 88; corresponding phone list: 71 72 73 74 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 20: 25; corresponding phone list: 59 60 61 62 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 21: 60; corresponding phone list: 63 64 65 66 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 22: 73; corresponding phone list: 35 36 37 38 
+WARNING (gmm-init-model[5.5.1074~1-71f3]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 23: 82; corresponding phone list: 67 68 69 70 
+LOG (gmm-init-model[5.5.1074~1-71f3]:main():gmm-init-model.cc:306) Wrote model.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jul  8 13:38:15 +04 2023, elapsed time 0 seconds

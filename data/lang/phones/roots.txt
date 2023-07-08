@@ -1,0 +1,18 @@
+shared split sil sil_B sil_E sil_I sil_S
+shared split spn spn_B spn_E spn_I spn_S
+shared split ա_B ա_E ա_I ա_S
+shared split է_B է_E է_I է_S
+shared split ի_B ի_E ի_I ի_S
+shared split ու_B ու_E ու_I ու_S
+shared split ռ_B ռ_E ռ_I ռ_S
+shared split ջ_B ջ_E ջ_I ջ_S
+shared split ն_B ն_E ն_I ն_S
+shared split յ_B յ_E յ_I յ_S
+shared split ր_B ր_E ր_I ր_S
+shared split կ_B կ_E կ_I կ_S
+shared split ժ_B ժ_E ժ_I ժ_S
+shared split մ_B մ_E մ_I մ_S
+shared split հ_B հ_E հ_I հ_S
+shared split ան_B ան_E ան_I ան_S
+shared split հա_B հա_E հա_I հա_S
+shared split մա_B մա_E մա_I մա_S

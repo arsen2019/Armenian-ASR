@@ -1,0 +1,20 @@
+# lattice-depth-per-frame "ark:gunzip -c exp/mono/decode/lat.1.gz|" "ark,t:|gzip -c > exp/mono/decode/depth_tmp.1.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >exp/mono/decode/ali_tmp.1.gz" 
+# Started at Sat Jul  8 13:38:15 +04 2023
+#
+lattice-depth-per-frame 'ark:gunzip -c exp/mono/decode/lat.1.gz|' 'ark,t:|gzip -c > exp/mono/decode/depth_tmp.1.gz' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >exp/mono/decode/ali_tmp.1.gz' 
+LOG (lattice-depth-per-frame[5.5.1074~1-71f3]:main():lattice-depth-per-frame.cc:82) Done 10 lattices.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 10F01, best cost 8.43161 + 713.136 = 721.568 over 62 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 10F02, best cost 5.94142 + 337.287 = 343.228 over 29 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 10F03, best cost 8.04478 + 941.423 = 949.468 over 98 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 10F04, best cost 8.18137 + 687.775 = 695.956 over 58 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 10F05, best cost 9.83648 + 1020.32 = 1030.16 over 86 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 11M01, best cost 6.2495 + 328.203 = 334.452 over 28 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 11M02, best cost 6.75364 + 434.293 = 441.047 over 37 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 11M03, best cost 7.91216 + 1214.44 = 1222.35 over 124 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 11M04, best cost 8.82917 + 732.992 = 741.821 over 66 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance 11M05, best cost 8.68287 + 735.401 = 744.083 over 61 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 11.1312 = 0.121515 [graph] + 11.0097 [acoustic] over 649 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jul  8 13:38:15 +04 2023, elapsed time 0 seconds

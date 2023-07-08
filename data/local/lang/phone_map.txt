@@ -1,0 +1,18 @@
+sil sil sil_B sil_E sil_I sil_S 
+spn spn spn_B spn_E spn_I spn_S 
+ա ա_B ա_E ա_I ա_S 
+է է_B է_E է_I է_S 
+ի ի_B ի_E ի_I ի_S 
+ու ու_B ու_E ու_I ու_S 
+ռ ռ_B ռ_E ռ_I ռ_S 
+ջ ջ_B ջ_E ջ_I ջ_S 
+ն ն_B ն_E ն_I ն_S 
+յ յ_B յ_E յ_I յ_S 
+ր ր_B ր_E ր_I ր_S 
+կ կ_B կ_E կ_I կ_S 
+ժ ժ_B ժ_E ժ_I ժ_S 
+մ մ_B մ_E մ_I մ_S 
+հ հ_B հ_E հ_I հ_S 
+ան ան_B ան_E ան_I ան_S 
+հա հա_B հա_E հա_I հա_S 
+մա մա_B մա_E մա_I մա_S 

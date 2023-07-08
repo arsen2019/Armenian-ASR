@@ -1,0 +1,9 @@
+ա_B է_B ի_B ու_B ռ_B ջ_B ն_B յ_B ր_B կ_B ժ_B մ_B հ_B ան_B հա_B մա_B 
+ա_E է_E ի_E ու_E ռ_E ջ_E ն_E յ_E ր_E կ_E ժ_E մ_E հ_E ան_E հա_E մա_E 
+ա_I է_I ի_I ու_I ռ_I ջ_I ն_I յ_I ր_I կ_I ժ_I մ_I հ_I ան_I հա_I մա_I 
+ա_S է_S ի_S ու_S ռ_S ջ_S ն_S յ_S ր_S կ_S ժ_S մ_S հ_S ան_S հա_S մա_S 
+sil spn 
+sil_B spn_B 
+sil_E spn_E 
+sil_I spn_I 
+sil_S spn_S 
