@@ -31,6 +31,9 @@ zlib1g-dev")
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ ./configure --shared
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ make depend CXX=g++
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ make CXX=g++
+```
+Եվ վերջապես ներբեռնում ենք SRILM-ը և տեղադրում համակարգչի վրա։
+https://hovinh.github.io/blog/2016-04-22-install-srilm-ubuntu/ հետևեք այս հղմանը և հաջողությամբ կտեղադրեք այն միայն ներբեռնելուց հետո վերանվանեք արխիվը srilm.tar.gz
 
 
 
