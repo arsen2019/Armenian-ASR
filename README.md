@@ -19,5 +19,18 @@ python2.7
 python3.8
 zlib1g-dev")
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ yes | sudo apt-get install $pkgs
+```
+Կլոնավորում ենք Kaldi-ն (Պատրաստ եղեք տրամադրել 9ԳԲ հիշողություն) և տեղադրում բոլոր անհրաժեշտ գործիքները: Կախված համակարգչի հնարավորություններից այս պրոցեսը կարող է տևել 2-4 ժամ։
+```shell
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ cd ./kaldi/tools
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/tools$ yes | extras/install_mkl.sh
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/tools$ extras/check_dependencies.sh
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/tools$ make CXX=g++
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/tools$ cd ../src
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ ./configure --shared
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ make depend CXX=g++
+(base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/src$ make CXX=g++
+
 
 
