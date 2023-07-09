@@ -2,7 +2,7 @@
 Առաջին հայկական open-source ձայնի ճանաչման մասին անհրաժեշտ ամբողջ տեղեկությունը։
 ## Միջավայրի ստեղծումը
 Սկզբում անհրաժեշտ է տեղադրել բոլոր անհրաժեշտ փաթեթները(packages) որոնք պետք կգան թե հիմա, թե աշխատանքի հետագա էտապներում։
-``` shell
+``` sh
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ sudo apt update && sudo apt upgrade
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ yes | sudo apt install unzip git-all
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ pkgs="wget
@@ -20,7 +20,7 @@ zlib1g-dev")
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ yes | sudo apt-get install $pkgs
 ```
 Կլոնավորում ենք Kaldi-ն (Պատրաստ եղեք տրամադրել 9ԳԲ հիշողություն) և տեղադրում բոլոր անհրաժեշտ գործիքները: Կախված համակարգչի հնարավորություններից այս պրոցեսը կարող է տևել 2-4 ժամ։
-```shell
+```sh
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~$ cd ./kaldi/tools
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/tools$ yes | extras/install_mkl.sh
@@ -36,7 +36,7 @@ https://hovinh.github.io/blog/2016-04-22-install-srilm-ubuntu/ հետևեք այ
 
 ## Ֆայլերի նախապատրաստում
 Կլոնավորեք այս repo֊ն kaldi/egs -ում
-```shell
+```sh
 git clone git@github.com:arsen2019/Armenian-ASR.git
 ```
 Սեփական աուդիոյով Kaldi֊ն սովորեցնելու համար անհրաժեշտ է՝
@@ -51,16 +51,17 @@ git clone git@github.com:arsen2019/Armenian-ASR.git
 Ավելի մանրամասն ամեն ֆայլի և նրա տեղակայման մասին կարող եք գտնել ՝ http://kaldi-asr.org/doc/kaldi_for_dummies.html կայքում։
 
 Բոլոր ֆայլերը պատրաստելուց հետո ուղակի պետք է ՝
-```bash
+```sh
 (base) arsen@arsen-HP-Pavilion-Laptop-15-eh1xxx:~/kaldi/egs/armenian$ bash run.sh
 
 ```
 
-##Օգտակար խորհուրդներ և հղումներ
+## Օգտակար խորհուրդներ և հղումներ
 
 1. Կարևոր է ձայնագրությունները և պապկեքը անվանել միայն թվերի և տառերի օգնությամբ։Այս օրինակում օրինակ 01M անվանված է առաջին արտասանողը, իսկ 01M0(1-5) իր արտասանաց 5 բառերը։Այսպես ավելի հեշտ է բաժանել ձայնագրությունները, քանզի առաջին երկու թիվը արտասանողին է նկարագրում, տառը(M կամ F)՝ սեռը, վերջին երկու թիվը՝ արտահայտությունը։
 2. Օգտվել ./utils/validate_dict_dir.pl և ./utils/fix_data_dir.sh գորցիքներից, որոնցից առաջինը ստուգում է արդյոք ճիշտ են ստեղծված և տեղակայված անհրաճեշտ ֆայլերը, իսկ երկրորդը ուղղում է պրոբլեմ առաջացնող կոդի մասը՝ ջնջելով այն։Ջնջելուց հետո արդեն պարզ է դառնում թե կոդի որ մասը փոխելու անհրաժեշտություն կա։
 3. Ֆայլերի վերջում դատարկ տողի առկայությունը բերում է սխալի։
 4. Տերմինալում առաջացող սխալների դեպքում ուշադրություն դարձրեք տերմինալի առաջին տողերում առաջացող սխալներին, վերջում արտատպված սխալներում հիմնականում հետևանք են և կանհետան առաջին արտատպված սխալը վերացնելուց հետո։
-5. https://groups.google.com/g/kaldi-help/ այս հղմամբ կգտնեք ձեր շատ հարցերի պատասխանները։
+5. Ձայնագրությունները պետք է լինեն mono և 16KHz այլ տեսակի ձայնագրություններ Kaldi-ն չի մշակում
+6. https://groups.google.com/g/kaldi-help/ այս հղմամբ կգտնեք ձեր շատ հարցերի պատասխանները։
 
