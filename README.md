@@ -60,9 +60,9 @@ And we have trained Kaldi with our custom dataset.
 ## Usefull advices and links
 
 1.It's mandatory to name all the audios and folders with numbers and letters with same length without any symbols.Kaldi use sorting mechanism wich is sensative to _,-,., and etc.For better understanding in this project I have named folders such as 01M...09F.First 2 digits stands for the number of speaker and M or F is the gender.Audios are named 01M01...09F05 and intuitively first three positions is for speaker and the last two numbers is for audio.With this pattern I can have 100 speakers with 100 words and give them unique ides.
-2. Use ./utils/validate_dict_dir.pl and ./utils/fix_data_dir.sh tools, first is validating the data that you have prepared and gives warning weather it's not valid for the further training.The second is fixing not valid lines and after that you can clearly understand which part of the code is causing the problem.
-3. Don't leave empty lines in the end of the files.
-4. In case of errors pay attantion to the first error that appears in terminal the further errors may be the result of the first one.Don't try to fix all errors give your priority to the first one.
-5. Audios have to be mono and 16KHz atherwise Kaldi won't consider it as a valid data and will give "empty archive" error.
-6. https://groups.google.com/g/kaldi-help/ this is wonderful site for those who will have a not ordinary problems.
+2.Use ./utils/validate_dict_dir.pl and ./utils/fix_data_dir.sh tools, first is validating the data that you have prepared and gives warning weather it's not valid for the further training.The second is fixing not valid lines and after that you can clearly understand which part of the code is causing the problem.
+3.Don't leave empty lines in the end of the files.
+4.In case of errors pay attantion to the first error that appears in terminal the further errors may be the result of the first one.Don't try to fix all errors give your priority to the first one.
+5.Audios have to be mono and 16KHz atherwise Kaldi won't consider it as a valid data and will give "empty archive" error.
+6.https://groups.google.com/g/kaldi-help/ this is wonderful site for those who will have a not ordinary problems.
 
