@@ -48,7 +48,7 @@ For training Kaldi with custom audio data we will need.
 * corpus.txt(All the possible words in ASR)
 * lexicon.txt(words with phonemes)
 * nonsilence_phones.txt, silence_phones.txt, optional_silence.txt(all the phonemes)
-More detailed information about file preparation and more specific explanation for each file you can find here http://kaldi-asr.org/doc/kaldi_for_dummies.html կայքում։
+More detailed information about file preparation and more specific explanation for each file you can find here http://kaldi-asr.org/doc/kaldi_for_dummies.html
 
 After completing all the above steps we just run this line
 ```sh
